@@ -1,0 +1,28 @@
+
+Collecting tasks from: tasks.py
+============================ Running: [96mminimal_task[0m =============================
+[96mminimal_task[0m status: [91mFAIL
+[0m[91m
+[WinError 2] O sistema não pode encontrar o arquivo especificado: 'c:\\Users\\paula\\OneDrive\\Área de Trabalho\\robocorp\\Teste\\output\\news_data.xlsx'
+[0m==================== Full Traceback (running [96mminimal_task[0m) =====================
+[91mTraceback (most recent call last):
+  File "C:\ProgramData\robocorp\ht\ce312a6_b1f3c24_09529949\lib\site-packages\robocorp\tasks\_commands.py", line 453, in run
+    result = task.run(**kwargs)
+  File "C:\ProgramData\robocorp\ht\ce312a6_b1f3c24_09529949\lib\site-packages\robocorp\tasks\_task.py", line 57, in run
+    return self.method(**kwargs)
+  File "c:\Users\paula\OneDrive\Área de Trabalho\robocorp\Teste\tasks.py", line 91, in minimal_task
+    scraper = NewsScraper()
+  File "c:\Users\paula\OneDrive\Área de Trabalho\robocorp\Teste\tasks.py", line 19, in __init__
+    self.excel.open_workbook(self.excel_path)
+  File "C:\ProgramData\robocorp\ht\ce312a6_b1f3c24_09529949\lib\site-packages\RPA\Excel\Files.py", line 355, in open_workbook
+    self.workbook = self._load_workbook(path, data_only, read_only)
+  File "C:\ProgramData\robocorp\ht\ce312a6_b1f3c24_09529949\lib\site-packages\RPA\Excel\Files.py", line 195, in _load_workbook
+    path = pathlib.Path(path).resolve(strict=True)
+  File "C:\ProgramData\robocorp\ht\ce312a6_b1f3c24_09529949\lib\pathlib.py", line 1077, in resolve
+    s = self._accessor.realpath(self, strict=strict)
+  File "C:\ProgramData\robocorp\ht\ce312a6_b1f3c24_09529949\lib\ntpath.py", line 689, in realpath
+    path = _getfinalpathname(path)
+FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado: 'c:\\Users\\paula\\OneDrive\\Área de Trabalho\\robocorp\\Teste\\output\\news_data.xlsx'
+
+[0m================================================================================
+Robocorp Log (html): c:\Users\paula\OneDrive\Área de Trabalho\robocorp\Teste\output\log.html

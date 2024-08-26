@@ -1,0 +1,1471 @@
+V 0.0.4
+T 2024-08-26T03:38:00.996+00:00
+ID 1|97fea3f1-635c-11ef-8cac-58a0233e283b
+I "sys.platform=win32"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:34:57) [MSC v.1936 64 bit (AMD64)]"
+M a:"tasks.py"
+SR a|0.031
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.031
+M f:"regular"
+M g:"\nCollecting tasks from: tasks.py\n"
+C f|g|0.031
+M h:"stderr"
+M i:"2024-08-26 00:38:03,279 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.\n"
+C h|i|2.283
+M j:"PASS"
+ET j|e|5.545
+M l:"minimal_task"
+M m:"tasks"
+M n:"C:\\Users\\paula\\OneDrive\\\u00c1rea de Trabalho\\robocorp\\Teste\\tasks.py"
+M o:null
+P k:l|m|n|o|95
+ST k|5.545
+M p:"============================ "
+C f|p|5.545
+M q:"Running: "
+C f|q|5.561
+M r:"task_name"
+C r|l|5.561
+M s:" =============================\n"
+C f|s|5.561
+M t:"METHOD"
+SE k|t|5.561
+M v:"NewsScraper.__init__"
+P u:v|m|n|e|10
+SE u|t|5.561
+M x:"Selenium.__init__"
+M y:"RPA.Browser.Selenium"
+M z:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\RPA\\Browser\\Selenium.py"
+P w:x|y|z|e|241
+SE w|t|5.561
+M A:"args"
+M B:"tuple"
+M C:"()"
+EA A|B|C
+M D:"kwargs"
+M E:"dict"
+M F:"{}"
+EA D|E|F
+EE t|j|5.967
+M H:"Files.__init__"
+M I:"RPA.Excel.Files"
+M J:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\RPA\\Excel\\Files.py"
+P G:H|I|J|e|180
+SE G|t|5.967
+EE t|j|5.967
+M L:"if not os.path.exists(self.excel_path)"
+P K:L|m|n|e|17
+M M:"IF_SCOPE"
+SE K|M|5.967
+M O:"Files.create_workbook"
+P N:O|I|J|e|220
+SE N|t|5.967
+M P:"path"
+M Q:"str"
+M R:"'./output/news_data.xlsx'"
+EA P|Q|R
+M S:"fmt"
+M T:"'xlsx'"
+EA S|Q|T
+M U:"sheet_name"
+M V:"NoneType"
+M W:"None"
+EA U|V|W
+P X:O|I|J|e|308
+M Y:"XlsxWorkbook"
+M Z:"<RPA.Excel.Files.XlsxWorkbook object at 0x000001733A9930D0>"
+R X|Y|Z|5.982
+EE t|j|5.982
+M 1:"Files.save_workbook"
+P 0:1|I|J|e|380
+SE 0|t|5.982
+EA P|V|W
+P 2:1|I|J|e|438
+R 2|V|W|6.06
+EE t|j|6.06
+M 4:"Files.open_workbook"
+P 3:4|I|J|e|310
+SE 3|t|6.06
+EA P|Q|R
+M 5:"data_only"
+M 6:"bool"
+M 7:"False"
+EA 5|6|7
+M 8:"read_only"
+EA 8|6|7
+P 9:4|I|J|e|357
+M aa:"<RPA.Excel.Files.XlsxWorkbook object at 0x000001733A80DE10>"
+R 9|Y|aa|6.154
+EE t|j|6.17
+M ac:"Files.create_worksheet"
+P ab:ac|I|J|e|539
+SE ab|t|6.17
+M ad:"name"
+M ae:"'news_data'"
+EA ad|Q|ae
+M af:"content"
+EA af|V|W
+M ag:"exist_ok"
+EA ag|6|7
+M ah:"header"
+EA ah|6|7
+EE t|j|6.17
+M aj:"Files.append_rows_to_worksheet"
+P ai:aj|I|J|e|715
+SE ai|t|6.17
+M ak:"list"
+M al:"[['title', 'date', 'description', 'image name', 'search count', 'contains money']]"
+EA af|ak|al
+EA ad|Q|ae
+EA ah|6|7
+M am:"start"
+EA am|V|W
+M an:"formatting_as_empty"
+EA an|6|7
+P ao:aj|I|J|e|786
+R ao|V|W|6.17
+EE t|j|6.17
+EE M|j|6.17
+EE t|j|6.17
+P ap:l|m|n|e|96
+M aq:"scraper"
+M ar:"NewsScraper"
+M as:"<tasks.NewsScraper object at 0x000001733A9473D0>"
+AS ap|aq|ar|as|6.17
+M au:"NewsScraper.start_browser"
+P at:au|m|n|e|28
+SE at|t|6.185
+M av:"url"
+M aw:"'https://news.search.yahoo.com/search;_ylt=AwrNOmai1ctmA1MJyYhXNyoA;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=Donald+Trump&fr2=piv-web&.tsrc=uh3_news_web&fr=uh3_news_web'"
+EA av|Q|aw
+M ay:"wrapper"
+M az:"RPA.Browser.common"
+M aA:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\RPA\\Browser\\common.py"
+P ax:ay|az|aA|e|33
+SE ax|t|6.185
+M aB:"(<RPA.Browser.Selenium.Selenium object at 0x000001733A9938E0>, 'https://news.search.yahoo.com/search;_ylt=AwrNOmai1ctmA1MJyYhXNyoA;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=Donald+Trump&fr2=piv-web&.tsrc=uh3_news_web&fr=uh3_news_web')"
+EA A|B|aB
+EA D|E|F
+P aC:ay|az|aA|e|36
+M aD:"int"
+M aE:"1"
+R aC|aD|aE|19.68
+EE t|j|19.68
+EE t|j|19.68
+M aG:"NewsScraper.search_news"
+P aF:aG|m|n|e|31
+SE aF|t|19.686
+M aH:"search_term"
+M aI:"'Donald Trump'"
+EA aH|Q|aI
+M aJ:"category"
+M aK:"'//*[@id=\"horizontal-bar\"]/ol/li[1]/div/div[1]/ul/li[2]/a'"
+EA aJ|Q|aK
+M aL:"months"
+EA aL|aD|aE
+P aM:aG|m|n|e|38
+M aN:"today"
+M aO:"datetime"
+M aP:"datetime.datetime(2024, 8, 26, 0, 38, 20, 682022)"
+AS aM|aN|aO|aP|19.686
+P aQ:aG|m|n|e|39
+M aR:"start_date"
+M aS:"datetime.datetime(2024, 7, 27, 0, 38, 20, 682022)"
+AS aQ|aR|aO|aS|19.686
+M aU:"SeleniumLibrary.find_elements"
+M aV:"SeleniumLibrary"
+M aW:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\SeleniumLibrary\\__init__.py"
+P aT:aU|aV|aW|e|771
+SE aT|t|19.686
+M aX:"locator"
+M aY:"'//*[@id=\"web\"]/ol/li'"
+EA aX|Q|aY
+M aZ:"parent"
+EA aZ|V|W
+P a0:aU|aV|aW|e|785
+M a1:"[<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.15\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.16\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.17\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.18\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.19\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.20\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.21\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.22\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.23\")>, <selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.24\")>]"
+R a0|ak|a1|19.749
+EE t|j|19.749
+P a2:aG|m|n|e|40
+M a3:"news_items"
+AS a2|a3|ak|a1|19.749
+M a5:"for item in news_items"
+P a4:a5|m|n|e|41
+M a6:"FOR"
+SE a4|a6|19.749
+M a8:"Step: for item in news_items"
+P a7:a8|m|n|e|41
+M a9:"FOR_STEP"
+SE a7|a9|19.749
+M ba:"item"
+M bb:"WebElement"
+M bc:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.15\")>"
+EA ba|bb|bc
+M be:"WebElement.text"
+M bf:"selenium.webdriver.remote.webelement"
+M bg:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py"
+P bd:be|bf|bg|e|87
+SE bd|t|19.764
+P bh:be|bf|bg|e|89
+M bi:"\"Donald Trump Fury: Melania's Husband Lashes Out After Fox News Phone Call Gaffe, Declares Himself a...\\nEconoTimes\u00b7 1 hour ago\\nDonald Trump responded angrily on Sunday morning to criticism following his awkward phone call with...\""
+R bh|Q|bi|19.835
+EE t|j|19.835
+P bj:aG|m|n|e|42
+M bk:"text"
+M bl:"[\"Donald Trump Fury: Melania's Husband Lashes Out After Fox News Phone Call Gaffe, Declares Himself a...\", 'EconoTimes\u00b7 1 hour ago', 'Donald Trump responded angrily on Sunday morning to criticism following his awkward phone call with...']"
+AS bj|bk|ak|bl|19.835
+P bm:aG|m|n|e|43
+M bn:"title"
+M bo:"\"Donald Trump Fury: Melania's Husband Lashes Out After Fox News Phone Call Gaffe, Declares Himself a...\""
+AS bm|bn|Q|bo|19.852
+P bp:aG|m|n|e|44
+M bq:"dateTransform"
+M br:"'EconoTimes\u00b7 1 hour ago'"
+AS bp|bq|Q|br|19.852
+M bt:"NewsScraper.parse_date"
+P bs:bt|m|n|e|56
+SE bs|t|19.852
+EA bq|Q|br
+P bu:bt|m|n|e|57
+M bv:"dateMatch"
+M bw:"Match"
+M bx:"<re.Match object; span=(12, 22), match='1 hour ago'>"
+AS bu|bv|bw|bx|19.852
+M bz:"if dateMatch"
+P by:bz|m|n|e|58
+SE by|M|19.852
+EA bv|bw|bx
+P bA:bt|m|n|e|59
+M bB:"dateHourStr"
+M bC:"'1 hour ago'"
+AS bA|bB|Q|bC|19.852
+M bE:"if 'hour' in dateHourStr"
+P bD:bE|m|n|e|60
+SE bD|M|19.867
+EA bB|Q|bC
+P bF:bt|m|n|e|61
+M bG:"hours"
+AS bF|bG|aD|aE|19.869
+P bH:bt|m|n|e|62
+M bI:"datetime.datetime(2024, 8, 25, 23, 38, 20, 866134)"
+R bH|aO|bI|19.87
+EE M|j|19.87
+EE M|j|19.87
+EE t|j|19.87
+P bJ:aG|m|n|e|45
+M bK:"date_hours"
+AS bJ|bK|aO|bI|19.87
+P bL:aG|m|n|e|46
+M bM:"description"
+M bN:"'Donald Trump responded angrily on Sunday morning to criticism following his awkward phone call with...'"
+AS bL|bM|Q|bN|19.87
+M bP:"NewsScraper.download_image"
+P bO:bP|m|n|e|70
+SE bO|t|19.87
+EA ba|bb|bc
+M bR:"SeleniumLibrary.find_element"
+P bQ:bR|aV|aW|e|754
+SE bQ|t|19.87
+M bS:"'//div/ul/li/a/img'"
+EA aX|Q|bS
+EA aZ|bb|bc
+P bT:bR|aV|aW|e|769
+M bU:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.2\")>"
+R bT|bb|bU|19.92
+EE t|j|19.92
+M bW:"WebElement.get_attribute"
+P bV:bW|bf|bg|e|150
+SE bV|t|19.92
+M bX:"'src'"
+EA ad|Q|bX
+P bY:bW|bf|bg|e|180
+M bZ:"'https://s.yimg.com/fz/api/res/1.2/sTnzFxnjsKEvZSSZhvbV0Q--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD05MjtweG9mZj0wO3B5b2ZmPTA7cT04MDt3PTE2NA--/https://s.yimg.com/am/60d/c303d13d4dd198d7f9374c604034aaf9'"
+R bY|Q|bZ|19.966
+EE t|j|19.966
+P b0:bP|m|n|e|71
+M b1:"image_url"
+AS b0|b1|Q|bZ|19.966
+P b2:bP|m|n|e|72
+M b3:"image_name"
+M b4:"'c303d13d4dd198d7f9374c604034aaf9'"
+AS b2|b3|Q|b4|19.966
+M b6:"if image_url"
+P b5:b6|m|n|e|75
+SE b5|M|19.966
+EA b1|Q|bZ
+M b8:"get"
+M b9:"requests.api"
+M ca:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\requests\\api.py"
+P b7:b8|b9|ca|e|62
+SE b7|t|19.966
+EA av|Q|bZ
+M cb:"params"
+EA cb|V|W
+EA D|E|F
+P cc:b8|b9|ca|e|73
+M cd:"Response"
+M ce:"<Response [200]>"
+R cc|cd|ce|20.466
+EE t|j|20.466
+P cf:bP|m|n|e|76
+M cg:"response"
+AS cf|cg|cd|ce|20.466
+M ci:"if response.status_code == 200"
+P ch:ci|m|n|e|77
+SE ch|M|64.934
+M ck:"Response.content"
+M cl:"requests.models"
+M cm:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\requests\\models.py"
+P cj:ck|cl|cm|e|891
+SE cj|t|64.938
+P cn:ck|cl|cm|e|907
+M co:"bytes"
+M cp:"b'\\xff\\xd8\\xff\\xe0\\x00\\x10JFIF\\x00\\x01\\x01\\x01\\x00`\\x00`\\x00\\x00\\xff\\xdb\\x00C\\x00\\x06\\x04\\x05\\x06\\x05\\x04\\x06\\x06\\x05\\x06\\x07\\x07\\x06\\x08\\n\\x10\\n\\n\\t\\t\\n\\x14\\x0e\\x0f\\x0c\\x10\\x17\\x14\\x18\\x18\\x17\\x14\\x16\\x16\\x1a\\x1d%\\x1f\\x1a\\x1b#\\x1c\\x16\\x16 , #&\\')*)\\x19\\x1f-0-(0%()(\\xff\\xdb\\x00C\\x01\\x07\\x07\\x07\\n\\x08\\n\\x13\\n\\n\\x13(\\x1a\\x16\\x1a((((((((((((((((((((((((((((((((((((((((((((((((((\\xff\\xc0\\x00\\x11\\x08\\x00\\\\\\x00\\xa4\\x03\\x01\"\\x00\\x02\\x11\\x01\\x03\\x11\\x01\\xff\\xc4\\x00\\x1c\\x00\\x00\\x01\\x04\\x03\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x06\\x02\\x03\\x05\\x07\\x00\\x01\\x04\\x08\\xff\\xc4\\x00A\\x10\\x00\\x01\\x03\\x03\\x03\\x01\\x06\\x04\\x03\\x02\\x0c\\x07\\x01\\x00\\x00\\x00\\x01\\x02\\x03\\x04\\x00\\x05\\x11\\x06\\x12!1\\x07\\x13\"AQq\\x142a\\x81\\x15\\x91\\xa1b\\xd1\\x08#BRcr\\x83\\x92\\xa2\\xb1\\xc1\\xe1\\x16\\x173CS\\x82\\xc2\\xf0\\xff\\xc4\\x00\\x1a\\x01\\x00\\x02\\x03\\x01\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x03\\x04\\x01\\x02\\x05\\x00\\x06\\xff\\xc4\\x00+\\x11\\x00\\x02\\x02\\x01\\x03\\x02\\x04\\x06\\x03\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x01\\x02\\x00\\x03\\x11\\x04\\x12!1A\\x05\"Q\\xa1\\x13\\x142aq\\x91\\x81\\xf0\\xf1R\\xff\\xda\\x00\\x0c\\x03\\x01\\x00\\x02\\x11\\x03\\x11\\x00?\\x00\\xe3\\xd1\\x17\\xd9\\xbf\\xf3V$(\\xd1\\xd1\\x16:\\xd8,;\\x15\\x85oJx\\xdd\\x91\\x9cr0:P\\x06\\xb8\\x8c\\xc4]ezf\"\\xf7\\xb2%,\\x83\\xb7n\\t\\xe4\\x8cy`\\x93E\\x10\\xf5N\\x9e\\xd3P\\xa7\\xff\\x00\\xc3lK\\x9bs\\x94\\x02L\\xa9I\\xd8\\x13\\xd7%>i#\\xa8\\xc7\\xae(\\t\\xf7\\xde\\x95!\\xc9\\x12\\x9d[\\xd2\\x1cV\\xe7\\x1cY\\xc9Q\\xf54\\xc2/\\x9b8\\x95\\xb1\\xb21\\x9c\\x98\\xd0\\x19\\xa5\\x01[\\x02\\x94\\x05\\x1a\\x02$\\x0fZ\\xb04\\xb6\\x84\\xb9)\\xeb5\\xddb\\x13\\xf0\\xbb\\xc6\\xa4\\xad\\xa3 %[s\\x90\\x0e|\\xf8\\xa009\\xa7RU\\x8c\\x05+\\x1e\\x9b\\xb8\\xa9\\xdaOI\\xc1\\x82\\xf5\\x13\\xd6\\xd25d\\xa5\\xc2yl\\xdb\\x1aB\\x88[I&kca\\x1cn?N\\x95\\xe7mE\\xa1\\xee\\xb6h\\x0e\\xdc\\xae\\x12`\\xad\\xb2\\xe1*\\xee\\xde\\nQR\\x8f\\xa5\\n\\x02\\xa21\\xb9E>\\x998\\xad\\xe0\\x127\\x13\\x8c\\xf3\\xcej\\xd4\\xd2k\\xe4\\x1fi\\x17\\\\\\xb6\\x0c\\x11\\xef$\\xf4\\xf5\\x92\\xe1\\xa8&\\xfc\\x1d\\xa6*\\x9ft\\x0c\\xa8\\xf4J\\x07\\xaa\\x95\\xd0U\\x85n\\xecR\\xf7%\\x9d\\xef\\xddmQ]\\xc6Cd\\xa9y\\xfb\\xf1O\\xe9;\\xe8E\\xa9V\\xeb%\\xb43\\x10/o~\\x1c\\xd8\\xa5\\xab\\xf9\\xca8\\xe4\\xd4\\xfa\\xe7\\x19\\t\\xeeeMKjm%kC$\\xa9E#\\xaf?\\xba\\xb2\\xb5\\x1e-`|V0&\\x8e\\x9b\\xc2U\\xd7.`\\xbd\\xe3\\xb1\\xcb\\xe4\\x1bz\\xe5\"}\\xaaOw\\xca\\x9bij\\n\\xff\\x00*\\xad\\xd2;\\xb5\\x85%`\\x14\\x9fN\\x84U\\xe5m\\x9e\\xd2`\\xcc\\x8a\\xd9u\\xa6d2\\xa2\\xd9Y\\xf1\\xa1^\\xa3\\xa9\\x00\\xfdj\\x89S\\x98Z\\xc6\\xe2p\\xa22z\\xf5\\xa7\\xfc?R\\xfa\\x90\\xdb\\xfbD\\xf5\\xfaT\\xd30\\x0b\\xde^\"\\xef}\\x90\\xda\\x17\\xf8\\xc4\\xe4\\xb0\\xe3)\\xe50\\x80PW\\xd3\\x8e\\x95\\xc1{\\xbd\\xde\\xad\\x91f.e\\xeap\\x8e\\x96\\xc9\\xca\\xa3\\xa5!k<m\\xce*\\xabr\\xfbsu\\r\\xa1w)e-\\xa7j0\\xe1\\x18\\x14Ol\\xd7\\xcd\\xc0e\\xa0t\\xfcIo\\xb61\\xde\\xc9}k\\xc9\\xf5\\xc1\\x07\\x9a)\\xd3\\x11\\xd0f\\x0cj\\x94\\x8eN?p\\xea\\xdc\\x95Z{\\n\\x9c\\xdd\\xed-\\xef\\x94T\\xe4f_;TB\\x8f\\x05>\\xbe\\xb5L\\x95\\xfd\\x7f\\xc3R\\xfa\\xb7X\\\\\\xf5T\\x86\\x9c\\xb98\\x12\\xd3 \\x06\\xa3\\xb2\\x9d\\xad\\xa0\\xe3\\x04\\x81\\xeaj\\x00\\xb9\\xf5]1MEr[\\xa9\\x8b\\xddhb\\x02\\xf4\\x11\\xfd\\xdey\\xc0\\xf6\\xa4\\x95\\xfdO\\xe5L\\xee?\\xb5\\xf9\\xd2J\\x8f\\xed~tl@\\xe6JYM\\xbdW\\x14\\x0b\\xcb\\x92\\x11\\x08$\\x95\\x16S\\x95\\x13\\x8e\\x05\\x1cYu%\\x8fN!\\xf6,\\xd7\\x8b\\x92\\x1ay\\xc4\\xa9\\xc3\\xf0\\xc0\\xe7\\x8c\\x1c\\x12=*\\xb0+\\xfa+\\xf3\\xa4\\xef\\xe7\\xa7\\xebBz\\xc3\\xf0ak\\xb4\\xd7\\xc8\\x12\\xd1\\xb8k\\x98\\xee\\xc8*E\\xea\\xee\\xb4c\\t\\xc4t\\x0c\\x0fNEeU\\xe1x\\xe3\\x1f\\xadeS\\xe5PB|\\xe3\\xff\\x00\\x7f\\xd9\\x1c\\x058\\x91I\\x18\\xf5\\x15)\\xa7\\xcd\\xac\\\\\\x90o\\x9d\\xf9\\x80\\x12\\xa2\\xa0\\xc1\\xf1\\x95c\\x8f\\xd6\\x95\\xe9\\x0f\\xd4\\xc9\\xee\\xcf\\xf4\\x1d\\xcbZ\\xaah\\xb7<\\xc3\\x08\\x89\\xb7z\\xde\\xce\\tVx\\x18\\xf6\\xae\\xbds\\xd9\\xdd\\xc3F\\xdb\\xe2K\\xb8M\\x86\\xfad\\xb8[J\\x1a\\xc8P\\xe39\\xc1\\xea8\\xa9\\xcd5\\xab4\\xe6\\x96C\\xec\\xd8n\\xd7\\xb6\\x99}\\xe48\\xef\\xf1);\\xb1\\xc1\\xea3\\xd2\\x9d\\xd4z\\xbbK\\xeaU2\\xdd\\xf2\\xe3\\x7f\\x99\\x1d\\x82T\\xd0-\\xa1;3\\xc68\\x00\\x9e<\\xe8a\\x9fwN?\\x10\\x85SoQ\\x9f\\xcc\\xaa\\xd2\\x9aX\\x15#{\\x16\\xb3qX\\xb1\\xfcO\\xc0\\xe0m2>rq\\xcdq\\x00\\x05>\\x8b\\xc4I\\xdb\\x06h\\'\\x8a\\xc28\\xa5\\x81[\\xc5\\x18\\x08\\x12s,-9\\xbe\\x15\\xb6:\\x9dm\\xd3\\x1eB\\x82\\xd3\\x80>B:\\x8a0vKHa\\xa3n\\x88\\xec\\xb7\\x7f\\xee\\xa7xIJp\\x7f\\x94\\xb3\\xfaUgh\\xbc\\xbe\\x9b;6\\xe0R\\xa40\\xb2\\xb4\\xef<\\x8c\\x9f\\x94}*zM\\xe2\\xca\\xeb\\x0c\\xbdsu\\xc4\\x08\\xed9-l6\\xe9Gz\\x10\\x920\\xacu\\xf1\\x10\\x00\\xf5\\xf6\\xaf%\\xa8\\xa1\\x96\\xf2\\x9fy\\xeb\\xf4\\xd7\\xa1\\xd3\\x8b=\\x07\\xbc%~ZS\\x05\\xa1\\xf0\\xe8nV\\xe1\\xbb\\n\\x04g\\xfa\\xc2\\x82\\xbb]\\xd3L\\xe9\\xcdP\\xd0\\x88\\x85\\xa24\\xe8\\xe9\\x94\\x01\\x1c\\x05\\x9f\\x9c\\x0f\\xa6H\\xfc\\xeaOL\\xcb\\xb6M\\x83\\t\\xbbyKh\\x9b-%\\xd4\\xba\\xe2\\x97\\xb4n\\x1b\\x89$\\xe7\\x18\\xc9\\xfc\\xeb\\x93\\xb6MQ\\x1bS\\xeav\\xc5\\xb8\\xa8\\xc3\\x80\\x83\\x1d\\x07x[k9\\xf9\\x90G\\x91\\xc0\\xad\\x0f\\tG[\\x1b\\xd2g\\xf8\\xc3#V\\xa4u\\x80\\x18\\xac\\xc5+momo\\xcf=\\x88\\x8cV\\x96\\xa0\\x94\\x92O\\x00f\\x9c\\xdbE\\x1acW\\xbd\\xa7\\xed\\xce\\xc3j\\xd7o\\x96\\x87\\x16\\\\R\\xa4#*\\xce0>\\xc2\\xa1\\x89\\x03\\x81\\x99*\\xa0\\x9f1\\xc4\\xb64\\xbfe\\x1aNN\\x9c\\xb5\\xbfv}k\\x9e\\xfbHq\\xed\\xb2\\xf6\\x80H\\xce\\x00\\x06\\xa9\\xce\\xd0\\xe0[mz\\xbe\\xe1\\x06\\xc9\\x9f\\x81`\\x84\\'.o\\xc9\\xc7<\\xd4\\xeb}\\xa3\\xca@p~\\x07f!h\\x08#\\xba\\xc0\\xc0\\xa6\\x1e\\xed\\x12s\\x90\\xddc\\xf0\\xabBw\\xa4\\xa4-1\\xf9Ns\\xc8\\xfc\\xe9:\\xd6\\xe5b[\\x9f\\xe69a\\xa1\\x97\\x0b\\xc7\\xf1\\x00\\x94)$S\\xca\\xe4\\xf3\\xc9\\xa6\\xc8\\xa6\\xf3\\x88\\x99\\x19\\x8d\\xd6V\\xc8\\xe6\\xb2\\xa3t\\x9d\\x82t^,W\\x8b#A\\xdb\\xb5\\xbaLFT\\xe1i.8\\xd7\\x84\\xa8yd{\\x1a\\x8d\\x0e\\xfe\\xd1\\xfe\\xed]\\x97.\\xd0`\\xbf:\\xc1k\\x9f%:\\x82\\xcd6vd\\xa6T@\\x80\\x9c\\x9c\\x05\\x03\\x801\\xb9@\\xf4<\\x03@]\\xb4X\\x19\\xd3=\\xa0L\\x8d\\x02:\\xa3[\\xdfm\\x12#\\xb6\\x95\\x02\\x84\\x820Bq\\xe5\\x90x\\xfa\\xd2\\x15\\xb1c\\x86\\x181\\xebT(\\xca\\x9c\\x81\\x05\\x03\\xbf\\xb4\\xaf\\xee\\xd3\\xad\\xb8T\\xa07+\\xfb\\xb5\\x1c\\x85\\x92@\\xca\\xff\\x00:\\x93c`H \\x1e\\x07Ri\\xa0\\x98\\x8a\\xef\\xcc\\xe9H8\\xe74\\xa1\\xf7\\xa4\\xa5@\\xf4\\xcd)\\xf9\\x0f\\xdb\\xa3\"cI(Z\\x89\\x0c-C\\x85(u\\xc7\\xae*K\\xed\\x19\\x9c\\x17q\\xc4\\x95\\x8bb\\xb9>\\x8e\\xf3\\xe1\\x94\\xc3_\\xf9$(4\\x9f\\xf1R\\xd8\\xb7\\xdb\\x83\\x8aD\\xbb\\xb2T\\xb1\\xd51S\\xbc\\x0f\\xfd\\x8e\\x07\\xe9A\\x92\\xa7M\\x9d\\x85L\\x96\\xf3\\xc7\\x1f\\xcbY4\\xdcg\\x0b\\x0enH\\xca\\x87#\\x93\\xc5\\x00\\xde\\xdd\\xa1\\x85+\\xde[\\x1a\\n%\\xbeghv\\xdb\\\\4w\\xed.4\\x85\\xb8_\\xe5N\\x1d\\xa0}\\xb8&\\x98\\xed\\xabD\\x9b$\\x8bx\\xb7\\xba\\xea\\x98\\x96\\x87\\x02\\x92\\xa5\\x00\\xb4m\\xc7\\x87=\\x089\\xf7\\xa8\\xce\\xc3]Z\\xbb[\\xb3\\xadn\\x1e\\xf1hy!G\\xd7a?\\x97\\x15`v\\xf4\\xb4\\xc7\\xd4\\xd6\\x96\\x17\\xb1\\xc7\\xa5\\xc1\\x90\\xa2\\xb7s\\xe1ZV\\xde\\xd2\\x8f G\\x8b\\xecO\\xadg\\xeaX\\x96\\xdf\\xdekxeKm\\xa9K},@?\\xb8\\x1fe\\xd3\\x89\\xb2v}\\'Q\\xab\\xb8\\x96\\xaf\\x85Wt\\x86\\x94T\\x96\\xc0\\xe1E^\\x8a\\x1c\\xe6\\xa3%\\xa2\\xc5\\xdc\\xa2F_\\x8a\\xc2\\xc8\\x1b\\x9aV\\xf0\\x9c\\xfa\\x83\\xe5\\xecj\\xdc\\xbc\\xc6\\xb6/\\xb0\\xab\\xa4\\x9d>\\xc2Y\\x8e\\xe5\\xb1\\xd4\\xb8\\x81\\xd3pA\\n\\xcf\\xed\\x02\\x0f>u\\xe7\\x98\\xae2\\xb6\\xa4!\\xe9ha{\\x01m\\xb7\\x19.!\\xe3\\xfc\\xd2G\\xcb\\xe5\\xcd\\x13J\\xe5T\\x91\\x01\\xaf\\xa8|b\\x84t\\xc8\\xe7\\xb45cL31y\\x83z\\x80Y \\x14\\xa9\\xf2PO\\xd3\\x1c\\xd5\\x83m\\xecv\\xdds\\xd31\\xe5C\\xd4HM\\xc8\\xa8!\\xd0\\xa2\\x954\\x95g\\x04\\x01\\xc1\\xf6\\xaa\\n-\\xc6E\\xbd\\xc7\\x1bm`\\x8c\\xf1\\x8e\\x9fj9\\xec\\xd7Q\\xbf\\xf8\\xe4\\x88\\xafA\\x87?\\xbdJT\\x94\\xcaV\\xd4\\xb6A\\x07 \\xe0\\xf3\\xcd4\\xd79\\x1c\\x1ebkR\\x03\\xc8\\x9d\\x9a\\xcbA^\\xb4\\xbc\\xf9-;\\x1d\\xc9\\x90\\xd8HZ\\xa62\\xd9\\xee\\xc0>\\xbe\\x86\\x84H\\xc7\\xa5_}\\x93^$\\xde\\xadZ\\xde%\\xc5j6\\xdf\\x12\\xc7v7\\x86\\xb7$\\x82\\x90\\x0f8\\xc0\\x07\\xa5P\\xe4$\\x0c!EI\\x1c%Du\\x1eF\\x98\\xa6\\xc6l\\xab\\xf5\\x18\\x80\\xb6\\xb5\\\\2t1\\xb2}\\xa9\\x06\\x9c#\\xda\\x90E\\x1b01\\xb3\\xcd9\\x12\\x1c\\x99\\xb2\\x12\\xc4&\\x1d\\x90\\xfa\\x81!\\xb6\\x92TN>\\x82\\x9d\\xb7\\xc4\\\\\\xe9\\xd1\\xe22\\xa4%\\xc7\\xdc\\r\\xa5K8H$\\xf5\\'\\xd2\\xad~\\xcf\\xed2tE\\xe2]\\xcd\\xf7m\\x93wF(d\\xa6XA\\x039$\\x0c\\x1e\\xb8\\xe2\\x83m\\xa1\\x07\\xde\\x1a\\x9a\\x8d\\x87\\xed+1\\xa5u\\x01\\xce,\\xb7\\x0e?\\xa15\\x95\\xe8\\xf7u\\x8c\\xd6VR\\x986\\xf7<\\xca\\x85\\xc4\\x0eO\\x97J\\xcaO\\xe6\\xdf\\xfeDs\\xe4\\xd7\\xd4\\xca\\x9a5\\x8a<mD\\xd6\\xa0\\xd5\\xf7Fc\\xdb\\xad\\xcc\\x85E\\x8c\\x87\\xd2\\xa99F\\x0eHO\\x84\\x91\\xe6\\x9ew\\x03\\xf4\\xc5\\x02\\xeb;\\xda\\xf5n\\xaa~\\xe8\\xa8\\xcd\\xb6\\x17\\x86\\x9bm\\x94\\xa8\\x07\\x00$\\x05\\x04\\x9e\\x84\\x8cp*\\x17N\\xdaa\\\\$:\\x99\\x97(\\xf6\\xe4\\xa0\\x02\\x85:\\xd9WxO\\x97\\x14sa\\xd2wH7\\x88\\x13\\xa0\\xbdm\\x9e\\xcb.\\x85\\'\\xba\\x91\\x82\\xa1\\x8ctP\\x07\\xa1\\xcdY\\x99)\\'-\\xc8\\x1f\\x885K/\\x03j\\xf9I\\xe7\\xbf\\xf7\\x10\\x1f\\xe1\\xd2\\x1c%I)Rx \\x8c\\x10}\\x08\\xa76\\x05\\x00\\x9cxE\\x1b\\xeb-5rz\\xf0fD\\x84\\xf3\\xce\\xccZ\\x94\\xb8\\xec7\\xbdI |\\xde\\x1c\\xe4\\x1f\\xf3\\xa1\\xf9\\x96\\x1b\\xbd\\xbe1\\x91:\\xd3:4d\\xabiq\\xd6\\x14\\x94\\x82|\\x89\"\\x8dM\\xebj\\x86\\x07\\xac\\x15\\xdav\\xa5\\xca0\\xe9#R\\x81\\xc6\\x07\\xb5p\\xeai[\\xccH\\xa1}\\xeaa\\x85wj\\xf2\\x1b\\xbcJ\\x03\\xef]\\x17\\tB4m\\xc98R\\xce\\xd0\\xa1\\xfc\\x9a\\x1c\\x94\\xfba\\xb5\\x02F~\\x87\\x9a\\x1d\\xce\\x0f\\x12\\xd4\\xa1\\x1c\\xce\\xd6\\xf9m>\\xd5\\xa1\\xf3\\x05}\\xa9\\x0c8\\x14\\x84\\xfb\\n\\xde\\xf0\\xae<\\xc7\\x95\\n\\x16\\x18\\xf6>\\xe9k\\xb5}.s\\x8d\\xd2T\\x83\\xf7ib\\xad?\\xe1\"\\xb2\\xadG\\xa5\\xdb\\xdb\\xb8\\x8e\\xfd\\x00\\x0e\\xa4)#\\xfd@\\xaacDK\\x105\\xbe\\x9c\\x95\\x9f\\xfaw\\x06\\x06~\\x8aXO\\xff\\x00Uo\\xff\\x00\\x08x\\x8eI\\xb8\\xc1m\\xb5a\\xc6\\xdaq\\xc4\\xab8\\xe4)$\\x7f\\x95+\\xa98\\xc4\\xd7\\xf0Tg\\xd4\\x8d\\x83$d\\x8f\\xb9\\x038\\xfeq\\x89\\x13\\xa7\\xee2\\x13\\xd8\\xfe\\xb5\\x8a]PK\\r\\xbc\\xa4\\'<\\x00\\xb6\\xff\\x00x5M\\xaf\\x82\\rXv\\xc9k:\\x07Z\\x94\\xf0\\x89\\x10XR\\x01\\xfd\\xb2G\\xfa\\x8a\\xafT<)\\n\\xe7\\xd6\\xad\\xa5\\xfa\\x0c\\xb7\\x8f\\x85\\xf9\\xe7)\\xd0\\xe0\\xfe\\xc01\\xb2\\xa0]\\x19\\xe0\\x01\\x9aC/\\xab\\xe2\\x96[qi\\x0b\\xc6\\xe2\\x83\\x83\\x81I\\x92\\xb0\\x96\\x89\\x18\\xce*8\\xbf\\xdd\\xbc\\x94\\xa5Dp3\\x8a13\\x1c\\tu[\\xf5\\xbc\\x84\\xe8\\xa5X\\xe0\\xba\\x96\\x9dua\\xc2\\xa6AK\\xa8O\\x9aT\\xbc\\x8c\\x83\\x83\\xeb\\xd6\\x85O\\x1c\\x0cq\\xc5\\n\\xdb..D}\\x0f\\xc5_\\x8d\\'\\xa2\\x89\\xc1\\xf7\\x19\\xe6\\x8a\\xed\\x974\\xcf\\x06^\\xa0\\x96\\xca\\x12N\\x02Yl!X\\xf2\\xe7\\x9c\\xfeT\\xc56\\x85\\xe2\\x06\\xda\\xcbw\\x89=9\\xebHP\\xf4\\xe9R\\x90Y\\xb6\\xdc%\\x06\\xe3Oy\\xb6\\x8ep\\xeb\\x91\\x89H\\xfb\\xe4T\\xac\\x9d\\x1e\\xb1:;6\\xfb\\x94[\\x9cU\\xa4-\\xf91\\x81H\\x8e\\x9c\\xe3\\xc4\\x0f9\\xf4\\xa3\\x9b\\x90\\x0c\\x93\\x02)rp\\x04\\x1f\\xfc2W\\xe0\\xff\\x00\\x8alG\\xc1\\x07{\\x9c\\xee\\xf1n\\xf6\\xf4\\xf2\\xcf\\xadG\\x94\\'\\xd0U\\xb7p\\xd2lI\\xb6&2\\'9\\x16\\x03K\\x1b\\x19m\\x01EX\\xf3*Q\\xeb\\xe7PR,V\\x98.-\\x83\\x04\\x11\\x82\\x9f\\x8a\\x9f4\\xa3\\x93\\xd0\\x80\\x8e?JF\\xaf\\x12\\xad\\x81\\xcf\\xaf\\xb4\\xd0\\xb3\\xc2\\xad\\x04m\\xe9\\x8eO\\xdf\\xbe;\\xc0 \\xc2O;\\x13\\xf9VWD\\xb4|,\\x97\\x18\\x0e\\xb6\\xf7vv\\xf7\\x8d+)W\\xd4\\x1a\\xca\\xd0\\xdcO\"f\\xec\\x03\\x83\\x17\\xa5\\xae\\xaeZe\\x8d\\xaf\\xad\\x88\\xee\\x90\\x1fS-\\xa5K\\xda3\\xd3uZ\\xbaVSWXi[kR\\x9aK\\xaaHqm\\x06\\xf3\\x9f.8\\'\\xd7\\xde\\xa9tch\\xdaA\\xf6\\xae\\x96\\xe6J\\x8c\\xc91\\xa4<\\xd9o+@J\\xc8\\x01^\\xb8\\xe9Y\\xda\\xbd\\x18\\xbf\\xcc83KG\\xae:\\x7f)\\x19\\x12\\xe6\\xd4\\xb7\\x89ZmK\\x9fo\\x9b\\xf0\\xce\\xb2\\xcb\\x8a+o\\x19H\\t$\\xe4\\x1f,\\x81U\\xb5\\xcb\\xb6+\\xcd\\xfa\\xd4\\xa8\\xb7\\x99O9\\x15\\xcd\\xa5\\xd6\\xb6\\xa4\\x8c\\xf9\\x121\\xe2\\x19\\x1d:\\xd0^\\xa6\\xbc=\"\\xd4\\xd0r\\xe2\\xf3\\xcb\\x96\\x94\\xa9m\\xac\\x92J:\\xe7\\xdb8\\xf7\\xfbP\\xa2\\\\\\xe7\\xc2s\\xedJi\\x94\\xd4\\xb80\\xfa\\x9b\\x05\\xad\\x91\\nu\\x0c\\xe6fJ.\\x96\\x90\\xda\\xcaF\\x0b$wjO\\xaf\\xd2\\xb5\\x0e\\xc6\\xcc\\x88\\xad\\xbf\\xf1o\\xb6\\\\\\x19)BR@\\xf6\\xcd@1\\x16l\\xa3\\xb2,g\\x9c\\xcf\\xa2p?3\\xc5\\x1b@eQ\\xa10\\xcb\\x83\\x0bm\\x01*\\x00\\xe7\\x91Gf\\'\\x98\\xb8\\x02sG\\xb1Em \\x192\\x89\\xc63\\x84\\xd3\\xa9\\xb3EO=\\xf4\\x82O\\x99\\xdb\\xfb\\xab\\xb5\\'\\x14\\xac\\xd5w\\x99;D\\xe6\\x8dna\\x87\\xd8y\\x0b|\\xad\\x97\\x10\\xea9\\x1dR\\xa0\\xa1\\xe5\\xea(\\xebWkU\\xeaiL?\"\\xde\\x96\\x16\\xd2\\x14\\x81\\xb1\\xec\\xe7$\\x12NS\\xf4\\xa1\\xcb=\\xb2U\\xdajb\\xc1o{\\x84d\\x92p\\x94\\x0fU\\x1f!G\\x11\\xb4U\\xa6\"\\x11\\xf8\\xa4\\xe58\\xb2pN\\xf0\\xd2\\x0788\\xf34\\xb6\\xa3QZqg\\xea9\\xa2k\\xe9\\x7f\\x8b\\xa7;H\\xef\\xfe\\xc0H\\xf2\\x1bf\\xc52\\xd4\\x1bZ\\x99\\x94\\x86\\xd0\\xb7\\n\\xfc@!{\\x868\\xfb{Ta\\xb6\\xc3#\\x05\\x0e\\x9f\\xed?\\xda\\xadGtU\\x92ZJm\\xd2\\x9dC\\x99\\xc0\\xee\\xdd\\x0e\\xfb\\x12\\x9e\\xb8\\xa0\\xcdG\\xa7\\xe6\\xd8d\\x86\\xe5\\x80\\xa6\\xd4Hm\\xe4|\\xaa\\xc7\\x97\\xd0\\xfd*(\\xd5\\xd7a\\xda\\x87\\x07\\xd2WR\\x96\\xb1\\xdfo=\\x06\\x7f\\x1c\\x082\\xe5\\x9a\\xdc\\xbf\\x99\\x97O\\xf6\\xc6\\x99V\\x9e\\xb5\\x95d\\xc7s\\'\\xfae~\\xfa\\x95\\xad\\x1ag$\\xc5\\xb1#E\\x8e\\xdc\\x13\\x84\\xc7X\\xf4\\xfe9\\x7f\\xbe\\x85\\x03\\xe1\\xb5).+s\\x88QI\\xfbqGk8I\\xac\\x93d\\x81pi\\x0e<\\xcaB\\xc8\\xce\\xf4xU\\xf9\\x8a%j_\\x81(\\xec\\x17\\xac\\n]\\xc1\\xe5\\xa7b\\x9dZ\\x91\\xfc\\xdd\\xdc\\x0f\\xb5Z}\\x91\\xde\\xa2G\\xd2whkq)\\x92\\xa9\\xc8\\x90\\xe2OU\\xb4\\x94\\'\\xa7\\xb1\\xc9\\xc7\\xbd\\t\\xafI\\xc0\\xc7\\x85R\\x12}w\\x7f\\xb5*\\xddc6\\xa9_\\x11\\r\\xf0\\xe3\\x83\\xa2_F@\\xfa\\x8d\\xa4sSe\\x0e\\xcaD\\x9a\\xeeT`\\xd2\\xf5\\x7fQX\\xdc\\x84\\x92g\\xb0\\x90\\x00\\xf0\\xee\\xc9\\xf7\\xc5W\\xda\\x9e\\xf7\\xbeb\\xcd\\xb6DU\\xb4\\xf2T\\x95\\x145\\xe2\\xc7L(\\xa8u\\xc7\\xa5A\\xbc\\xb7\\x1fuO<S\\xde\\xaf\\x95lN\\x13\\x9f\\xa0\\xf2\\x14\\xd2\\x87\\x1eu\\x1a}\\x02TC70\\xd7\\xf8\\x8b\\xd8\\xa5\\x10`H\\xfe\\xef\\xc8\\x1e\\x05ev\\xe3\\xde\\xb2\\xb4w\\xcc\\xcd\\x92\\xea\\xd6P\\xf4\\xc4\\xd8\\xae3z\\xd3\\xdf\\x80\\xca\\xb8MJ\\x19\\xb8\\xb5\\xdd)M\\xa8\\x91\\x9d\\xd8=:\\xfd\\xaa\\xaf\\xed\\x0bI\\x9d\\x1d\\xa8\\x8d\\xb4LL\\xd6\\x16\\xd2^i\\xf0\\x00%\\'#\\x04z\\x8cT\\x86\\xa4\\xb63\\x1d\\xdd?\\x1d.\\xc9q2\\\\\\x0bqN\\xbe\\xa5\\xab%a<\\x12x\\xe0\\xd1/oo-\\xcd[\\x0e\\x03\\xc4:\\x88\\x90\\xd3\\xdd\\xba\\xa4\\x8e\\xf0\\x85u\\n#\\x19\\xf9G\\x97\\xad+Q(@\\xcf\\x071\\x8b@pN0F%J\\xc5\\xb6+\\x85\\xb59\\x1d\\x0b\\xee\\xd2\\x10\\x82\\xb1\\xbbjG@3\\xd0T\\x9a\\x18m8\\tB\\x00\\xfa$R\\xd0\\x90\\x07\\x02\\x96)\\x90\\x07a\\x01\\xcfy\\xb4$\\x03Q\\x05YR\\x8f\\xa9\\xa9\\xaf#\\xedP\\t4\\xb6\\xab\\xb0\\x86\\xa3\\xbcx\\x1a\\xd8#\\xd6\\x9b\\x15\\x8a\\xf9U\\xedJF%\\xb7\\xa5\\xa2\\xa6\\xcb\\xa5Yu\\xb0\\x9f\\x8d\\x97\\xb5\\xc5\\x13\\xd4n\\xf9A\\xfa\\x04\\xf3\\xd7\\xd6\\xb7dCSnr\\x11%2\\\\q)\\xdc\\x00p7\\xde\\x0f2\\xb7\\x0fA\\xc8\\xe0z\\xf1\\x8a\\xef\\x98\\xa1\\xf8\\x1d\\xb9!\\tI\\r!D\\x8e\\xa7,\\xab\\xad@\\xda\\xd0\\x1e\\xd5\\x96\\xa6\\x96N\\xc5\\xbb\\xe2\\x00\\xfaf\\xb3t\\xde}\\xd6w&;o\\x97\\t\\xd8\\t+\\xaa\\x19f\\xd2\\xecA\\x1d\\x97Y}gqk\\xe2\\x83\\xc9H\\x1ea_2U\\x9a\\xe8q\\x94\\xdf\\xac\\x12\\xe1\\xc9V\\xf7\\nF\\xc5+\\x19\\xdd\\xce\\xd5{\\xe7 \\xfa\\xe0\\xf9\\x1a{Y\\xc2i\\xee\\xd0\\xdbi\\xc2\\xa2\\x1fi*Y\\xcf$\\xe1_\\xb8Vi$\\x05o^N\\xe0\\x94\\x8e?\\xae\\xe7\\xee\\xae\\xd5\\x8c&\\xfe\\xead\\xd0|\\xdb{\\x11)c\\x90pF\\x0f\\x98\\xadR\\xa4\\x92\\xa9\\x0f(\\xf5.(\\xfe\\xa6\\x99&\\xb4b3n\\x1f\\rI[\\xd5\\xba\">\\x9cTJ\\xcf\\x06\\xa4\\xadD\\x98\\xc3\\xff\\x00\\xdef\\x8f\\xa7>x;~\\x99\\xd4i\\xb5S\\x8a\\xe9M*\\x9f\\x8a\\xc4(\\xe2\\x88t]\\xba+\\x9a\\xaa\\x0bz\\x89\\xa5\\xb3m\\x19q\\xee\\xf9\\xb5$)!$\\x81\\xd3\\xcc\\xe2\\x87\\x14q\\x82*qZ\\xf7R\\x9e?\\x13_\\x84\\x92\\x0e\\xc4\\xe7\\x9f\\xb5\\t\\xc3\\x11\\x81.\\x85A\\xcbK}v\\xbe\\xce\\xdcV\\xf4\\xc7\\xb7\\xa1\\x04\\x02\\x9f\\xe2\\xdc\\xe4z\\x8fZ\\xca\\xa7\\x13\\xaeu\\x12P\\x84\\x0b\\x92\\x82P\\x02R;\\xb4p\\x07\\xda\\xb2\\x95\\xf8\\x0f\\xeb\\xef\\x19\\xf8\\xf5\\xfa{O\\xff\\xd9'"
+R cn|co|cp|64.938
+EE t|j|64.938
+EE M|j|64.951
+EE M|j|64.951
+P cq:bP|m|n|e|80
+R cq|Q|b4|64.951
+EE t|j|64.951
+P cr:aG|m|n|e|47
+AS cr|b3|Q|b4|64.959
+P cs:aG|m|n|e|50
+M ct:"search_count"
+M cu:"2"
+AS cs|ct|aD|cu|64.982
+P cv:aG|m|n|e|52
+M cw:"contains_money"
+AS cv|cw|6|7|64.998
+M cy:"NewsScraper.log_data"
+P cx:cy|m|n|e|82
+SE cx|t|65.001
+EA bn|Q|bo
+M cz:"date"
+EA cz|aO|bI
+EA bM|Q|bN
+EA b3|Q|b4
+EA ct|aD|cu
+EA cw|6|7
+SE ai|t|65.001
+M cA:"[[\"Donald Trump Fury: Melania's Husband Lashes Out After Fox News Phone Call Gaffe, Declares Himself a...\", '2024-08-25 23:38:20', 'Donald Trump responded angrily on Sunday morning to criticism following his awkward phone call with...', 'c303d13d4dd198d7f9374c604034aaf9', 2, False]]"
+EA af|ak|cA
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|65.001
+EE t|j|65.019
+SE 0|t|65.019
+EA P|V|W
+R 2|V|W|65.166
+EE t|j|65.166
+EE t|j|65.166
+EE a9|j|65.166
+SE a7|a9|65.166
+M cB:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.16\")>"
+EA ba|bb|cB
+SE bd|t|65.166
+M cC:"\"Donald Trump's Arizona crowd size compared to Kamala Harris'\\nNewsweek\u00b7 2 days ago\\nFormer President Donald Trump held a campaign rally in Phoenix, Arizona, on Friday, prompting fans...\""
+R bh|Q|cC|65.291
+EE t|j|65.291
+M cD:"[\"Donald Trump's Arizona crowd size compared to Kamala Harris'\", 'Newsweek\u00b7 2 days ago', 'Former President Donald Trump held a campaign rally in Phoenix, Arizona, on Friday, prompting fans...']"
+AS bj|bk|ak|cD|65.291
+M cE:"\"Donald Trump's Arizona crowd size compared to Kamala Harris'\""
+AS bm|bn|Q|cE|65.307
+M cF:"'Newsweek\u00b7 2 days ago'"
+AS bp|bq|Q|cF|65.307
+SE bs|t|65.307
+EA bq|Q|cF
+AS bu|bv|V|W|65.307
+P cG:bt|m|n|e|63
+M cH:"datetime.datetime(2024, 8, 26, 0, 39, 6, 303128)"
+R cG|aO|cH|65.307
+EE t|j|65.307
+AS bJ|bK|aO|cH|65.307
+M cI:"'Former President Donald Trump held a campaign rally in Phoenix, Arizona, on Friday, prompting fans...'"
+AS bL|bM|Q|cI|65.307
+SE bO|t|65.307
+EA ba|bb|cB
+SE bQ|t|65.307
+EA aX|Q|bS
+EA aZ|bb|cB
+R bT|bb|bU|65.335
+EE t|j|65.335
+SE bV|t|65.335
+EA ad|Q|bX
+R bY|Q|bZ|65.359
+EE t|j|65.359
+AS b0|b1|Q|bZ|65.359
+AS b2|b3|Q|b4|65.359
+SE b5|M|65.359
+EA b1|Q|bZ
+SE b7|t|65.359
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|65.684
+EE t|j|65.684
+AS cf|cg|cd|ce|65.684
+SE ch|M|65.684
+SE cj|t|65.684
+R cn|co|cp|65.684
+EE t|j|65.684
+EE M|j|65.684
+EE M|j|65.684
+R cq|Q|b4|65.684
+EE t|j|65.684
+AS cr|b3|Q|b4|65.684
+AS cs|ct|aD|cu|65.684
+AS cv|cw|6|7|65.684
+SE cx|t|65.684
+EA bn|Q|cE
+EA cz|aO|cH
+EA bM|Q|cI
+EA b3|Q|b4
+EA ct|aD|cu
+EA cw|6|7
+SE ai|t|65.699
+M cJ:"[[\"Donald Trump's Arizona crowd size compared to Kamala Harris'\", '2024-08-26 00:39:06', 'Former President Donald Trump held a campaign rally in Phoenix, Arizona, on Friday, prompting fans...', 'c303d13d4dd198d7f9374c604034aaf9', 2, False]]"
+EA af|ak|cJ
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|65.699
+EE t|j|65.699
+SE 0|t|65.699
+EA P|V|W
+R 2|V|W|65.777
+EE t|j|65.777
+EE t|j|65.777
+EE a9|j|65.777
+SE a7|a9|65.777
+M cK:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.17\")>"
+EA ba|bb|cK
+SE bd|t|65.777
+M cL:"\"'Coward' Donald Trump Declines Debate with Kamala Harris on ABC, Raising Questions About 2024...\\nEconoTimes\u00b7 33 minutes ago\\nIn a move that has stirred considerable speculation, former President Donald Trump has announced he...\""
+R bh|Q|cL|65.809
+EE t|j|65.809
+M cM:"[\"'Coward' Donald Trump Declines Debate with Kamala Harris on ABC, Raising Questions About 2024...\", 'EconoTimes\u00b7 33 minutes ago', 'In a move that has stirred considerable speculation, former President Donald Trump has announced he...']"
+AS bj|bk|ak|cM|65.809
+M cN:"\"'Coward' Donald Trump Declines Debate with Kamala Harris on ABC, Raising Questions About 2024...\""
+AS bm|bn|Q|cN|65.809
+M cO:"'EconoTimes\u00b7 33 minutes ago'"
+AS bp|bq|Q|cO|65.809
+SE bs|t|65.809
+EA bq|Q|cO
+AS bu|bv|V|W|65.809
+M cP:"datetime.datetime(2024, 8, 26, 0, 39, 6, 804951)"
+R cG|aO|cP|65.809
+EE t|j|65.809
+AS bJ|bK|aO|cP|65.809
+M cQ:"'In a move that has stirred considerable speculation, former President Donald Trump has announced he...'"
+AS bL|bM|Q|cQ|65.809
+SE bO|t|65.824
+EA ba|bb|cK
+SE bQ|t|65.824
+EA aX|Q|bS
+EA aZ|bb|cK
+R bT|bb|bU|65.84
+EE t|j|65.84
+SE bV|t|65.84
+EA ad|Q|bX
+R bY|Q|bZ|65.868
+EE t|j|65.868
+AS b0|b1|Q|bZ|65.868
+AS b2|b3|Q|b4|65.868
+SE b5|M|65.868
+EA b1|Q|bZ
+SE b7|t|65.868
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|65.916
+EE t|j|65.916
+AS cf|cg|cd|ce|65.916
+SE ch|M|65.916
+SE cj|t|65.916
+R cn|co|cp|65.916
+EE t|j|65.916
+EE M|j|65.916
+EE M|j|65.916
+R cq|Q|b4|65.916
+EE t|j|65.916
+AS cr|b3|Q|b4|65.916
+AS cs|ct|aD|cu|65.916
+AS cv|cw|6|7|65.916
+SE cx|t|65.916
+EA bn|Q|cN
+EA cz|aO|cP
+EA bM|Q|cQ
+EA b3|Q|b4
+EA ct|aD|cu
+EA cw|6|7
+SE ai|t|65.932
+M cR:"[[\"'Coward' Donald Trump Declines Debate with Kamala Harris on ABC, Raising Questions About 2024...\", '2024-08-26 00:39:06', 'In a move that has stirred considerable speculation, former President Donald Trump has announced he...', 'c303d13d4dd198d7f9374c604034aaf9', 2, False]]"
+EA af|ak|cR
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|65.937
+EE t|j|65.937
+SE 0|t|65.937
+EA P|V|W
+R 2|V|W|66.018
+EE t|j|66.018
+EE t|j|66.018
+EE a9|j|66.018
+SE a7|a9|66.018
+M cS:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.18\")>"
+EA ba|bb|cS
+SE bd|t|66.018
+M cT:"'Will taxes go up after 2024 election? Trump, Harris have different plans\\nDeseret News via Yahoo News\u00b7 39 minutes ago\\nIn recent rallies and speeches, Vice President Kamala Harris and former President Donald Trump have...'"
+R bh|Q|cT|66.068
+EE t|j|66.068
+M cU:"['Will taxes go up after 2024 election? Trump, Harris have different plans', 'Deseret News via Yahoo News\u00b7 39 minutes ago', 'In recent rallies and speeches, Vice President Kamala Harris and former President Donald Trump have...']"
+AS bj|bk|ak|cU|66.068
+M cV:"'Will taxes go up after 2024 election? Trump, Harris have different plans'"
+AS bm|bn|Q|cV|66.068
+M cW:"'Deseret News via Yahoo News\u00b7 39 minutes ago'"
+AS bp|bq|Q|cW|66.068
+SE bs|t|66.068
+EA bq|Q|cW
+AS bu|bv|V|W|66.068
+M cX:"datetime.datetime(2024, 8, 26, 0, 39, 7, 64704)"
+R cG|aO|cX|66.068
+EE t|j|66.068
+AS bJ|bK|aO|cX|66.068
+M cY:"'In recent rallies and speeches, Vice President Kamala Harris and former President Donald Trump have...'"
+AS bL|bM|Q|cY|66.068
+SE bO|t|66.068
+EA ba|bb|cS
+SE bQ|t|66.068
+EA aX|Q|bS
+EA aZ|bb|cS
+R bT|bb|bU|66.118
+EE t|j|66.118
+SE bV|t|66.118
+EA ad|Q|bX
+R bY|Q|bZ|66.15
+EE t|j|66.151
+AS b0|b1|Q|bZ|66.151
+AS b2|b3|Q|b4|66.151
+SE b5|M|66.151
+EA b1|Q|bZ
+SE b7|t|66.151
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|66.214
+EE t|j|66.214
+AS cf|cg|cd|ce|66.214
+SE ch|M|66.214
+SE cj|t|66.23
+R cn|co|cp|66.23
+EE t|j|66.23
+EE M|j|66.23
+EE M|j|66.23
+R cq|Q|b4|66.23
+EE t|j|66.23
+AS cr|b3|Q|b4|66.23
+AS cs|ct|aD|aE|66.23
+AS cv|cw|6|7|66.23
+SE cx|t|66.23
+EA bn|Q|cV
+EA cz|aO|cX
+EA bM|Q|cY
+EA b3|Q|b4
+EA ct|aD|aE
+EA cw|6|7
+SE ai|t|66.23
+M cZ:"[['Will taxes go up after 2024 election? Trump, Harris have different plans', '2024-08-26 00:39:07', 'In recent rallies and speeches, Vice President Kamala Harris and former President Donald Trump have...', 'c303d13d4dd198d7f9374c604034aaf9', 1, False]]"
+EA af|ak|cZ
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|66.23
+EE t|j|66.23
+SE 0|t|66.23
+EA P|V|W
+R 2|V|W|66.308
+EE t|j|66.308
+EE t|j|66.308
+EE a9|j|66.308
+SE a7|a9|66.308
+M c0:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.19\")>"
+EA ba|bb|c0
+SE bd|t|66.308
+M c1:"\"Donald Trump's Border Wall Boast Backfires: Supporter Reveals Stunt Was Staged in Front of Barack...\\nEconoTimes\u00b7 54 minutes ago\\nDonald Trump's much-publicized visit to Arizona on Thursday, intended to showcase his...\""
+R bh|Q|c1|66.324
+EE t|j|66.324
+M c2:"[\"Donald Trump's Border Wall Boast Backfires: Supporter Reveals Stunt Was Staged in Front of Barack...\", 'EconoTimes\u00b7 54 minutes ago', \"Donald Trump's much-publicized visit to Arizona on Thursday, intended to showcase his...\"]"
+AS bj|bk|ak|c2|66.324
+M c3:"\"Donald Trump's Border Wall Boast Backfires: Supporter Reveals Stunt Was Staged in Front of Barack...\""
+AS bm|bn|Q|c3|66.324
+M c4:"'EconoTimes\u00b7 54 minutes ago'"
+AS bp|bq|Q|c4|66.324
+SE bs|t|66.324
+EA bq|Q|c4
+AS bu|bv|V|W|66.324
+M c5:"datetime.datetime(2024, 8, 26, 0, 39, 7, 319889)"
+R cG|aO|c5|66.324
+EE t|j|66.324
+AS bJ|bK|aO|c5|66.339
+M c6:"\"Donald Trump's much-publicized visit to Arizona on Thursday, intended to showcase his...\""
+AS bL|bM|Q|c6|66.339
+SE bO|t|66.339
+EA ba|bb|c0
+SE bQ|t|66.339
+EA aX|Q|bS
+EA aZ|bb|c0
+R bT|bb|bU|66.355
+EE t|j|66.355
+SE bV|t|66.355
+EA ad|Q|bX
+R bY|Q|bZ|66.37
+EE t|j|66.37
+AS b0|b1|Q|bZ|66.37
+AS b2|b3|Q|b4|66.37
+SE b5|M|66.37
+EA b1|Q|bZ
+SE b7|t|66.37
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|66.419
+EE t|j|66.419
+AS cf|cg|cd|ce|66.427
+SE ch|M|66.427
+SE cj|t|66.427
+R cn|co|cp|66.427
+EE t|j|66.427
+EE M|j|66.427
+EE M|j|66.427
+R cq|Q|b4|66.427
+EE t|j|66.427
+AS cr|b3|Q|b4|66.427
+AS cs|ct|aD|cu|66.435
+AS cv|cw|6|7|66.435
+SE cx|t|66.435
+EA bn|Q|c3
+EA cz|aO|c5
+EA bM|Q|c6
+EA b3|Q|b4
+EA ct|aD|cu
+EA cw|6|7
+SE ai|t|66.435
+M c7:"[[\"Donald Trump's Border Wall Boast Backfires: Supporter Reveals Stunt Was Staged in Front of Barack...\", '2024-08-26 00:39:07', \"Donald Trump's much-publicized visit to Arizona on Thursday, intended to showcase his...\", 'c303d13d4dd198d7f9374c604034aaf9', 2, False]]"
+EA af|ak|c7
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|66.435
+EE t|j|66.435
+SE 0|t|66.435
+EA P|V|W
+R 2|V|W|66.518
+EE t|j|66.518
+EE t|j|66.518
+EE a9|j|66.518
+SE a7|a9|66.518
+M c8:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.20\")>"
+EA ba|bb|c8
+SE bd|t|66.518
+M c9:"\"Donald Trump\u2019s 'Powerfulnnz' Gaffe: Social Media Erupts After Error-Filled Truth Social Post Is...\\nEconoTimes\u00b7 1 hour ago\\nDonald Trump once again became the subject of online ridicule after posting an error-riddled message...\""
+R bh|Q|c9|66.551
+EE t|j|66.551
+M da:"[\"Donald Trump\u2019s 'Powerfulnnz' Gaffe: Social Media Erupts After Error-Filled Truth Social Post Is...\", 'EconoTimes\u00b7 1 hour ago', 'Donald Trump once again became the subject of online ridicule after posting an error-riddled message...']"
+AS bj|bk|ak|da|66.551
+M db:"\"Donald Trump\u2019s 'Powerfulnnz' Gaffe: Social Media Erupts After Error-Filled Truth Social Post Is...\""
+AS bm|bn|Q|db|66.551
+AS bp|bq|Q|br|66.551
+SE bs|t|66.551
+EA bq|Q|br
+AS bu|bv|bw|bx|66.551
+SE by|M|66.551
+EA bv|bw|bx
+AS bA|bB|Q|bC|66.551
+SE bD|M|66.551
+EA bB|Q|bC
+AS bF|bG|aD|aE|66.551
+M dc:"datetime.datetime(2024, 8, 25, 23, 39, 7, 547459)"
+R bH|aO|dc|66.551
+EE M|j|66.551
+EE M|j|66.551
+EE t|j|66.551
+AS bJ|bK|aO|dc|66.551
+M dd:"'Donald Trump once again became the subject of online ridicule after posting an error-riddled message...'"
+AS bL|bM|Q|dd|66.551
+SE bO|t|66.551
+EA ba|bb|c8
+SE bQ|t|66.551
+EA aX|Q|bS
+EA aZ|bb|c8
+R bT|bb|bU|66.568
+EE t|j|66.568
+SE bV|t|66.568
+EA ad|Q|bX
+R bY|Q|bZ|66.601
+EE t|j|66.601
+AS b0|b1|Q|bZ|66.601
+AS b2|b3|Q|b4|66.601
+SE b5|M|66.601
+EA b1|Q|bZ
+SE b7|t|66.601
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|66.635
+EE t|j|66.635
+AS cf|cg|cd|ce|66.635
+SE ch|M|66.635
+SE cj|t|66.635
+R cn|co|cp|66.635
+EE t|j|66.635
+EE M|j|66.65
+EE M|j|66.65
+R cq|Q|b4|66.651
+EE t|j|66.651
+AS cr|b3|Q|b4|66.651
+AS cs|ct|aD|cu|66.651
+AS cv|cw|6|7|66.651
+SE cx|t|66.651
+EA bn|Q|db
+EA cz|aO|dc
+EA bM|Q|dd
+EA b3|Q|b4
+EA ct|aD|cu
+EA cw|6|7
+SE ai|t|66.651
+M de:"[[\"Donald Trump\u2019s 'Powerfulnnz' Gaffe: Social Media Erupts After Error-Filled Truth Social Post Is...\", '2024-08-25 23:39:07', 'Donald Trump once again became the subject of online ridicule after posting an error-riddled message...', 'c303d13d4dd198d7f9374c604034aaf9', 2, False]]"
+EA af|ak|de
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|66.651
+EE t|j|66.651
+SE 0|t|66.651
+EA P|V|W
+R 2|V|W|66.718
+EE t|j|66.718
+EE t|j|66.733
+EE a9|j|66.735
+SE a7|a9|66.735
+M df:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.21\")>"
+EA ba|bb|df
+SE bd|t|66.735
+M dg:"\"The GOP's Plan to Challenge a Harris Victory\\nMSNBC via Yahoo News\u00b7 13 minutes ago\\nAs poll after poll shows Kamala Harris ahead of Donald Trump nationally, Republicans are getting ready to build a pathway to challenge a potential Harris...\""
+R bh|Q|dg|66.751
+EE t|j|66.751
+M dh:"[\"The GOP's Plan to Challenge a Harris Victory\", 'MSNBC via Yahoo News\u00b7 13 minutes ago', 'As poll after poll shows Kamala Harris ahead of Donald Trump nationally, Republicans are getting ready to build a pathway to challenge a potential Harris...']"
+AS bj|bk|ak|dh|66.751
+M di:"\"The GOP's Plan to Challenge a Harris Victory\""
+AS bm|bn|Q|di|66.751
+M dj:"'MSNBC via Yahoo News\u00b7 13 minutes ago'"
+AS bp|bq|Q|dj|66.751
+SE bs|t|66.751
+EA bq|Q|dj
+AS bu|bv|V|W|66.751
+M dk:"datetime.datetime(2024, 8, 26, 0, 39, 7, 747503)"
+R cG|aO|dk|66.751
+EE t|j|66.751
+AS bJ|bK|aO|dk|66.751
+M dl:"'As poll after poll shows Kamala Harris ahead of Donald Trump nationally, Republicans are getting ready to build a pathway to challenge a potential Harris...'"
+AS bL|bM|Q|dl|66.766
+SE bO|t|66.768
+EA ba|bb|df
+SE bQ|t|66.768
+EA aX|Q|bS
+EA aZ|bb|df
+R bT|bb|bU|66.785
+EE t|j|66.785
+SE bV|t|66.785
+EA ad|Q|bX
+R bY|Q|bZ|66.801
+EE t|j|66.801
+AS b0|b1|Q|bZ|66.801
+AS b2|b3|Q|b4|66.801
+SE b5|M|66.801
+EA b1|Q|bZ
+SE b7|t|66.801
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|66.851
+EE t|j|66.851
+AS cf|cg|cd|ce|66.851
+SE ch|M|66.851
+SE cj|t|66.851
+R cn|co|cp|66.851
+EE t|j|66.851
+EE M|j|66.851
+EE M|j|66.851
+R cq|Q|b4|66.851
+EE t|j|66.851
+AS cr|b3|Q|b4|66.868
+AS cs|ct|aD|aE|66.868
+AS cv|cw|6|7|66.868
+SE cx|t|66.868
+EA bn|Q|di
+EA cz|aO|dk
+EA bM|Q|dl
+EA b3|Q|b4
+EA ct|aD|aE
+EA cw|6|7
+SE ai|t|66.868
+M dm:"[[\"The GOP's Plan to Challenge a Harris Victory\", '2024-08-26 00:39:07', 'As poll after poll shows Kamala Harris ahead of Donald Trump nationally, Republicans are getting ready to build a pathway to challenge a potential Harris...', 'c303d13d4dd198d7f9374c604034aaf9', 1, False]]"
+EA af|ak|dm
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|66.868
+EE t|j|66.868
+SE 0|t|66.868
+EA P|V|W
+R 2|V|W|67.151
+EE t|j|67.151
+EE t|j|67.151
+EE a9|j|67.151
+SE a7|a9|67.151
+M dn:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.22\")>"
+EA ba|bb|dn
+SE bd|t|67.151
+M do:"'Why Are Donald Trump and Tim Walz Both Talking About Bruce Springsteen?\\nRolling Stone via Yahoo News\u00b7 2 hours ago\\nAnd even in the far-flung political era of 2024, where Beyonc\u00e9\u2019s \u201cFreedom\u201d scores Kamala Harris\u2019...'"
+R bh|Q|do|67.201
+EE t|j|67.201
+M dp:"['Why Are Donald Trump and Tim Walz Both Talking About Bruce Springsteen?', 'Rolling Stone via Yahoo News\u00b7 2 hours ago', 'And even in the far-flung political era of 2024, where Beyonc\u00e9\u2019s \u201cFreedom\u201d scores Kamala Harris\u2019...']"
+AS bj|bk|ak|dp|67.201
+M dq:"'Why Are Donald Trump and Tim Walz Both Talking About Bruce Springsteen?'"
+AS bm|bn|Q|dq|67.201
+M dr:"'Rolling Stone via Yahoo News\u00b7 2 hours ago'"
+AS bp|bq|Q|dr|67.201
+SE bs|t|67.201
+EA bq|Q|dr
+M ds:"<re.Match object; span=(30, 41), match='2 hours ago'>"
+AS bu|bv|bw|ds|67.201
+SE by|M|67.218
+EA bv|bw|ds
+M dt:"'2 hours ago'"
+AS bA|bB|Q|dt|67.218
+SE bD|M|67.218
+EA bB|Q|dt
+AS bF|bG|aD|cu|67.218
+M du:"datetime.datetime(2024, 8, 25, 22, 39, 8, 214320)"
+R bH|aO|du|67.218
+EE M|j|67.218
+EE M|j|67.218
+EE t|j|67.218
+AS bJ|bK|aO|du|67.218
+M dv:"'And even in the far-flung political era of 2024, where Beyonc\u00e9\u2019s \u201cFreedom\u201d scores Kamala Harris\u2019...'"
+AS bL|bM|Q|dv|67.218
+SE bO|t|67.218
+EA ba|bb|dn
+SE bQ|t|67.218
+EA aX|Q|bS
+EA aZ|bb|dn
+R bT|bb|bU|67.269
+EE t|j|67.269
+SE bV|t|67.269
+EA ad|Q|bX
+R bY|Q|bZ|67.286
+EE t|j|67.286
+AS b0|b1|Q|bZ|67.3
+AS b2|b3|Q|b4|67.3
+SE b5|M|67.3
+EA b1|Q|bZ
+SE b7|t|67.3
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|67.365
+EE t|j|67.365
+AS cf|cg|cd|ce|67.365
+SE ch|M|67.365
+SE cj|t|67.365
+R cn|co|cp|67.365
+EE t|j|67.365
+EE M|j|67.365
+EE M|j|67.365
+R cq|Q|b4|67.365
+EE t|j|67.365
+AS cr|b3|Q|b4|67.365
+AS cs|ct|aD|aE|67.365
+AS cv|cw|6|7|67.365
+SE cx|t|67.365
+EA bn|Q|dq
+EA cz|aO|du
+EA bM|Q|dv
+EA b3|Q|b4
+EA ct|aD|aE
+EA cw|6|7
+SE ai|t|67.365
+M dw:"[['Why Are Donald Trump and Tim Walz Both Talking About Bruce Springsteen?', '2024-08-25 22:39:08', 'And even in the far-flung political era of 2024, where Beyonc\u00e9\u2019s \u201cFreedom\u201d scores Kamala Harris\u2019...', 'c303d13d4dd198d7f9374c604034aaf9', 1, False]]"
+EA af|ak|dw
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|67.381
+EE t|j|67.381
+SE 0|t|67.381
+EA P|V|W
+R 2|V|W|67.466
+EE t|j|67.466
+EE t|j|67.466
+EE a9|j|67.466
+SE a7|a9|67.466
+M dx:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.23\")>"
+EA ba|bb|dx
+SE bd|t|67.466
+M dy:"\"Trump claims 'polling against Kamala is looking very good' while attacking 'Crooked Joe'\\nThe Raw Story\u00b7 3 hours ago\\nDonald Trump on Sunday launched an attack that, while mentioning polling against Vice President...\""
+R bh|Q|dy|67.492
+EE t|j|67.492
+M dz:"[\"Trump claims 'polling against Kamala is looking very good' while attacking 'Crooked Joe'\", 'The Raw Story\u00b7 3 hours ago', 'Donald Trump on Sunday launched an attack that, while mentioning polling against Vice President...']"
+AS bj|bk|ak|dz|67.492
+M dA:"\"Trump claims 'polling against Kamala is looking very good' while attacking 'Crooked Joe'\""
+AS bm|bn|Q|dA|67.5
+M dB:"'The Raw Story\u00b7 3 hours ago'"
+AS bp|bq|Q|dB|67.5
+SE bs|t|67.5
+EA bq|Q|dB
+M dC:"<re.Match object; span=(15, 26), match='3 hours ago'>"
+AS bu|bv|bw|dC|67.5
+SE by|M|67.5
+EA bv|bw|dC
+M dD:"'3 hours ago'"
+AS bA|bB|Q|dD|67.5
+SE bD|M|67.5
+EA bB|Q|dD
+M dE:"3"
+AS bF|bG|aD|dE|67.5
+M dF:"datetime.datetime(2024, 8, 25, 21, 39, 8, 495940)"
+R bH|aO|dF|67.5
+EE M|j|67.5
+EE M|j|67.5
+EE t|j|67.5
+AS bJ|bK|aO|dF|67.5
+M dG:"'Donald Trump on Sunday launched an attack that, while mentioning polling against Vice President...'"
+AS bL|bM|Q|dG|67.5
+SE bO|t|67.5
+EA ba|bb|dx
+SE bQ|t|67.5
+EA aX|Q|bS
+EA aZ|bb|dx
+R bT|bb|bU|67.515
+EE t|j|67.515
+SE bV|t|67.515
+EA ad|Q|bX
+R bY|Q|bZ|67.546
+EE t|j|67.546
+AS b0|b1|Q|bZ|67.546
+AS b2|b3|Q|b4|67.546
+SE b5|M|67.546
+EA b1|Q|bZ
+SE b7|t|67.546
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|67.578
+EE t|j|67.578
+AS cf|cg|cd|ce|67.578
+SE ch|M|67.578
+SE cj|t|67.593
+R cn|co|cp|67.593
+EE t|j|67.593
+EE M|j|67.593
+EE M|j|67.593
+R cq|Q|b4|67.593
+EE t|j|67.593
+AS cr|b3|Q|b4|67.593
+AS cs|ct|aD|aE|67.593
+AS cv|cw|6|7|67.593
+SE cx|t|67.593
+EA bn|Q|dA
+EA cz|aO|dF
+EA bM|Q|dG
+EA b3|Q|b4
+EA ct|aD|aE
+EA cw|6|7
+SE ai|t|67.593
+M dH:"[[\"Trump claims 'polling against Kamala is looking very good' while attacking 'Crooked Joe'\", '2024-08-25 21:39:08', 'Donald Trump on Sunday launched an attack that, while mentioning polling against Vice President...', 'c303d13d4dd198d7f9374c604034aaf9', 1, False]]"
+EA af|ak|dH
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|67.593
+EE t|j|67.593
+SE 0|t|67.593
+EA P|V|W
+R 2|V|W|67.671
+EE t|j|67.671
+EE t|j|67.671
+EE a9|j|67.671
+SE a7|a9|67.671
+M dI:"<selenium.webdriver.remote.webelement.WebElement (session=\"c59974b2e67fdd04d8ed7a1e271fd38a\", element=\"f.38C3E1B6C351956100D2217C6061AB74.d.23D9EB237F9BECF302BB799669C837A4.e.24\")>"
+EA ba|bb|dI
+SE bd|t|67.671
+M dJ:"'Fact-Checking Trump\u2019s Reaction to Kamala Harris\u2019 DNC Speech\\nTime via AOL\u00b7 1 hour ago\\nLeft: Democratic nominee Vice President Kamala Harris at the DNC in Chicago on Aug. 22, 2024. Right:...'"
+R bh|Q|dJ|67.687
+EE t|j|67.687
+M dK:"['Fact-Checking Trump\u2019s Reaction to Kamala Harris\u2019 DNC Speech', 'Time via AOL\u00b7 1 hour ago', 'Left: Democratic nominee Vice President Kamala Harris at the DNC in Chicago on Aug. 22, 2024. Right:...']"
+AS bj|bk|ak|dK|67.687
+M dL:"'Fact-Checking Trump\u2019s Reaction to Kamala Harris\u2019 DNC Speech'"
+AS bm|bn|Q|dL|67.687
+M dM:"'Time via AOL\u00b7 1 hour ago'"
+AS bp|bq|Q|dM|67.703
+SE bs|t|67.703
+EA bq|Q|dM
+M dN:"<re.Match object; span=(14, 24), match='1 hour ago'>"
+AS bu|bv|bw|dN|67.703
+SE by|M|67.703
+EA bv|bw|dN
+AS bA|bB|Q|bC|67.703
+SE bD|M|67.703
+EA bB|Q|bC
+AS bF|bG|aD|aE|67.703
+M dO:"datetime.datetime(2024, 8, 25, 23, 39, 8, 699084)"
+R bH|aO|dO|67.703
+EE M|j|67.703
+EE M|j|67.703
+EE t|j|67.703
+AS bJ|bK|aO|dO|67.703
+M dP:"'Left: Democratic nominee Vice President Kamala Harris at the DNC in Chicago on Aug. 22, 2024. Right:...'"
+AS bL|bM|Q|dP|67.703
+SE bO|t|67.703
+EA ba|bb|dI
+SE bQ|t|67.703
+EA aX|Q|bS
+EA aZ|bb|dI
+R bT|bb|bU|67.718
+EE t|j|67.718
+SE bV|t|67.718
+EA ad|Q|bX
+R bY|Q|bZ|67.734
+EE t|j|67.734
+AS b0|b1|Q|bZ|67.734
+AS b2|b3|Q|b4|67.734
+SE b5|M|67.734
+EA b1|Q|bZ
+SE b7|t|67.734
+EA av|Q|bZ
+EA cb|V|W
+EA D|E|F
+R cc|cd|ce|67.781
+EE t|j|67.781
+AS cf|cg|cd|ce|67.781
+SE ch|M|67.781
+SE cj|t|67.781
+R cn|co|cp|67.781
+EE t|j|67.781
+EE M|j|67.781
+EE M|j|67.781
+R cq|Q|b4|67.781
+EE t|j|67.781
+AS cr|b3|Q|b4|67.781
+M dQ:"0"
+AS cs|ct|aD|dQ|67.781
+AS cv|cw|6|7|67.781
+SE cx|t|67.796
+EA bn|Q|dL
+EA cz|aO|dO
+EA bM|Q|dP
+EA b3|Q|b4
+EA ct|aD|dQ
+EA cw|6|7
+SE ai|t|67.796
+M dR:"[['Fact-Checking Trump\u2019s Reaction to Kamala Harris\u2019 DNC Speech', '2024-08-25 23:39:08', 'Left: Democratic nominee Vice President Kamala Harris at the DNC in Chicago on Aug. 22, 2024. Right:...', 'c303d13d4dd198d7f9374c604034aaf9', 0, False]]"
+EA af|ak|dR
+EA ad|Q|ae
+EA ah|6|7
+EA am|V|W
+EA an|6|7
+R ao|V|W|67.796
+EE t|j|67.796
+SE 0|t|67.796
+EA P|V|W
+R 2|V|W|67.871
+EE t|j|67.876
+EE t|j|67.877
+EE a9|j|67.877
+EE a6|j|67.877
+EE t|j|67.877
+EE t|j|67.877
+C r|l|67.883
+M dS:" status: "
+C f|dS|67.891
+M dT:"PASS\n"
+C f|dT|67.891
+M dU:"================================================================================\n"
+C f|dU|67.891
+ET j|e|67.891
+M dW:"Teardown tasks"
+M dX:"teardown"
+P dV:dW|dX|e|e|0
+ST dV|67.891
+M dY:"Process snapshot"
+SPS dY|67.899
+M dZ:"System information:\nMemory: Total: 7.9 G, Available: 2.6 G, Used: 66.5 %\nCPUs: 4"
+P d0:e|e|e|e|0
+L I|dZ|d0|0|67.969
+M d1:"Subprocess: chrome.exe (pid: 4884, status: running)\nCommand Line: C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe --type=renderer --user-data-dir=c:\\Users\\paula\\AppData\\Local\\robocorp\\temp\\58b7d5483cbf816e\\scoped_dir11240_246374957 --no-sandbox --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --video-capture-use-gpu-memory-buffer --lang=pt-BR --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1724631076153588 --launch-time-ticks=12422769216 --field-trial-handle=4480,i,18392711357868841554,1290195977616825678,262144 --variations-seed-version --log-level=0 --mojo-platform-channel-handle=4456 /prefetch:1\nStarted: 00:38:18\nParent pid: 14312\nResident Set Size: 28.6 M\nVirtual Memory Size: 17.7 M"
+L I|d1|d0|0|68.517
+M d2:"OutputToPortThread|Thread ID: 7544 (daemon)"
+STD d2|68.517
+M d3:"c:\\Users\\paula\\.vscode\\extensions\\ms-python.debugpy-2024.10.0-win32-x64\\bundled\\libs\\debugpy\\_vendored\\pydevd\\_pydev_bundle\\pydev_monkey.py"
+M d4:"__call__"
+M d5:"ret = self.original_func(*self.args, **self.kwargs)"
+TBE d3|1118|d4|d5
+M d6:"self"
+M d7:"_NewThreadStartupWithTrace"
+M d8:"<_pydev_bundle.pydev_monkey._NewThreadStartupWithTrace object at 0x000001733A946800>"
+TBV d6|d7|d8
+M d9:"py_db"
+M ea:"PyDB"
+M eb:"<pydevd.PyDB object at 0x0000017339D5CB50>"
+TBV d9|ea|eb
+M ec:"thread_id"
+M ed:"'pid_14700_id_1594415670768'"
+TBV ec|Q|ed
+M ee:"t"
+M ef:"Thread"
+M eg:"<Thread(OutputToPortThread, started daemon 7544)>"
+TBV ee|ef|eg
+M eh:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\threading.py"
+M ei:"_bootstrap"
+M ej:"self._bootstrap_inner()"
+TBE eh|973|ei|ej
+TBV d6|ef|eg
+M ek:"_bootstrap_inner"
+M el:"self.run()"
+TBE eh|1016|ek|el
+TBV d6|ef|eg
+M em:"run"
+M en:"self._target(*self._args, **self._kwargs)"
+TBE eh|953|em|en
+TBV d6|ef|eg
+M eo:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\robocorp\\tasks\\_log_output_setup.py"
+M ep:"write_in_thread"
+M eq:"msg = q.get()"
+TBE eo|73|ep|eq
+M er:"msg"
+M es:"'ST dV|67.86\\n'"
+TBV er|Q|es
+M et:"client_socket"
+M eu:"socket"
+M ev:"<socket.socket fd=932, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56536), raddr=('127.0.0.1', 50124)>"
+TBV et|eu|ev
+M ew:"log"
+M ex:"module"
+M ey:"<module 'robocorp.log' from 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py'>"
+TBV ew|ex|ey
+M ez:"port_in_env"
+M eA:"'50124'"
+TBV ez|Q|eA
+M eB:"q"
+M eC:"Queue"
+M eD:"<queue.Queue object at 0x000001733A9464A0>"
+TBV eB|eC|eD
+M eE:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\queue.py"
+M eF:"self.not_empty.wait()"
+TBE eE|171|b8|eF
+TBV d6|eC|eD
+M eG:"block"
+M eH:"True"
+TBV eG|6|eH
+M eI:"timeout"
+TBV eI|V|W
+M eJ:"wait"
+M eK:"waiter.acquire()"
+TBE eh|320|eJ|eK
+M eL:"Condition"
+M eM:"<Condition(<unlocked _thread.lock object at 0x000001733A9567C0>, 1)>"
+TBV d6|eL|eM
+TBV eI|V|W
+M eN:"waiter"
+M eO:"lock"
+M eP:"<locked _thread.lock object at 0x000001733ACBE880>"
+TBV eN|eO|eP
+M eQ:"saved_state"
+TBV eQ|V|W
+M eR:"gotit"
+TBV eR|6|7
+ETD 68.536
+M eS:"pydevd.CheckAliveThread|Thread ID: 9008 (non daemon)"
+STD eS|68.536
+TBE eh|973|ei|ej
+M eT:"CheckAliveThread"
+M eU:"<CheckAliveThread(pydevd.CheckAliveThread, started 9008)>"
+TBV d6|eT|eU
+TBE eh|1016|ek|el
+TBV d6|eT|eU
+M eV:"c:\\Users\\paula\\.vscode\\extensions\\ms-python.debugpy-2024.10.0-win32-x64\\bundled\\libs\\debugpy\\_vendored\\pydevd\\_pydevd_bundle\\pydevd_daemon_thread.py"
+M eW:"self._on_run()"
+TBE eV|49|em|eW
+TBV d6|eT|eU
+M eX:"created_pydb_daemon"
+M eY:"{<WriterThread(pydevd.Writer, started daemon 4420)>: 1, <ReaderThread(pydevd.Reader, started daemon 7140)>: 1, <PyDBCommandThread(pydevd.CommandThread, started daemon 10188)>: 1, <CheckAliveThread(pydevd.CheckAliveThread, started 9008)>: 1}"
+TBV eX|E|eY
+M eZ:"c:\\Users\\paula\\.vscode\\extensions\\ms-python.debugpy-2024.10.0-win32-x64\\bundled\\libs\\debugpy\\_vendored\\pydevd\\pydevd.py"
+M e0:"_on_run"
+M e1:"self._wait_event.wait(0.3)"
+TBE eZ|261|e0|e1
+TBV d6|eT|eU
+M e2:"can_exit"
+M e3:"function"
+M e4:"<function CheckAliveThread._on_run.<locals>.can_exit at 0x0000017339D43A30>"
+TBV e2|e3|e4
+TBV d9|ea|eb
+M e5:"signaled = self._cond.wait(timeout)"
+TBE eh|607|eJ|e5
+M e6:"Event"
+M e7:"<threading.Event object at 0x0000017339DAB760>"
+TBV d6|e6|e7
+M e8:"float"
+M e9:"0.3"
+TBV eI|e8|e9
+M fa:"signaled"
+TBV fa|6|7
+M fb:"gotit = waiter.acquire(True, timeout)"
+TBE eh|324|eJ|fb
+M fc:"<Condition(<unlocked _thread.lock object at 0x0000017339D71A00>, 1)>"
+TBV d6|eL|fc
+TBV eI|e8|e9
+M fd:"<locked _thread.lock object at 0x000001733D9A9980>"
+TBV eN|eO|fd
+TBV eQ|V|W
+TBV eR|6|7
+ETD 68.551
+M fe:"pydevd.CommandThread|Thread ID: 10188 (daemon)"
+STD fe|68.551
+TBE eh|973|ei|ej
+M ff:"PyDBCommandThread"
+M fg:"<PyDBCommandThread(pydevd.CommandThread, started daemon 10188)>"
+TBV d6|ff|fg
+TBE eh|1016|ek|el
+TBV d6|ff|fg
+TBE eV|49|em|eW
+TBV d6|ff|fg
+TBV eX|E|eY
+M fh:"self._py_db_command_thread_event.wait(0.3)"
+TBE eZ|215|e0|fh
+TBV d6|ff|fg
+TBE eh|607|eJ|e5
+M fi:"<threading.Event object at 0x0000017339D5CCD0>"
+TBV d6|e6|fi
+TBV eI|e8|e9
+TBV fa|6|7
+TBE eh|324|eJ|fb
+M fj:"<Condition(<unlocked _thread.lock object at 0x0000017339D61A00>, 1)>"
+TBV d6|eL|fj
+TBV eI|e8|e9
+M fk:"<locked _thread.lock object at 0x000001733D9A9600>"
+TBV eN|eO|fk
+TBV eQ|V|W
+TBV eR|6|7
+ETD 68.551
+M fl:"pydevd.Reader|Thread ID: 7140 (daemon)"
+STD fl|68.551
+TBE eh|973|ei|ej
+M fm:"ReaderThread"
+M fn:"<ReaderThread(pydevd.Reader, started daemon 7140)>"
+TBV d6|fm|fn
+TBE eh|1016|ek|el
+TBV d6|fm|fn
+TBE eV|49|em|eW
+TBV d6|fm|fn
+TBV eX|E|eY
+M fo:"c:\\Users\\paula\\.vscode\\extensions\\ms-python.debugpy-2024.10.0-win32-x64\\bundled\\libs\\debugpy\\_vendored\\pydevd\\_pydevd_bundle\\pydevd_comm.py"
+M fp:"line = self._read_line()"
+TBE fo|222|e0|fp
+TBV d6|fm|fn
+M fq:"content_len"
+M fr:"-1"
+TBV fq|aD|fr
+M fs:"line"
+M ft:"b'\\r\\n'"
+TBV fs|co|ft
+M fu:"json_contents"
+M fv:"b'{\"seq\": 22, \"type\": \"request\", \"command\": \"threads\"}'"
+TBV fu|co|fv
+M fw:"_read_line"
+M fx:"r = self.sock.recv(1024)"
+TBE fo|204|fw|fx
+TBV d6|fm|fn
+M fy:"i"
+TBV fy|aD|fr
+ETD 68.569
+M fz:"pydevd.Writer|Thread ID: 4420 (daemon)"
+STD fz|68.569
+TBE eh|973|ei|ej
+M fA:"WriterThread"
+M fB:"<WriterThread(pydevd.Writer, started daemon 4420)>"
+TBV d6|fA|fB
+TBE eh|1016|ek|el
+TBV d6|fA|fB
+TBE eV|49|em|eW
+TBV d6|fA|fB
+TBV eX|E|eY
+M fC:"cmd = self._cmd_queue.get(True, 0.1)"
+TBE fo|368|e0|fC
+TBV d6|fA|fB
+M fD:"cmd"
+M fE:"NetCommand"
+M fF:"<_pydevd_bundle.pydevd_net_command.NetCommand object at 0x000001733D6060E0>"
+TBV fD|fE|fF
+M fG:"self.not_empty.wait(remaining)"
+TBE eE|180|b8|fG
+M fH:"<queue.Queue object at 0x0000017338C75000>"
+TBV d6|eC|fH
+TBV eG|6|eH
+M fI:"0.1"
+TBV eI|e8|fI
+M fJ:"endtime"
+M fK:"12473.412"
+TBV fJ|e8|fK
+M fL:"remaining"
+M fM:"0.1000000000003638"
+TBV fL|e8|fM
+TBE eh|324|eJ|fb
+M fN:"<Condition(<unlocked _thread.lock object at 0x0000017339D70040>, 1)>"
+TBV d6|eL|fN
+TBV eI|e8|fM
+M fO:"<locked _thread.lock object at 0x000001733ACCBA40>"
+TBV eN|eO|fO
+TBV eQ|V|W
+TBV eR|6|7
+ETD 68.569
+M fP:"MainThread|Thread ID: 6628 (non daemon)"
+STD fP|68.569
+M fQ:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\robocorp\\log\\__init__.py"
+M fR:"process_snapshot"
+M fS:"robo_logger.process_snapshot()"
+TBE fQ|270|fR|fS
+M fT:"logger_instances"
+M fU:"{<robocorp.log._robo_logger._RoboLogger object at 0x000001733A8FDCF0>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x000001733A946AA0>: 1}"
+TBV fT|E|fU
+M fV:"robo_logger"
+M fW:"_RoboLogger"
+M fX:"<robocorp.log._robo_logger._RoboLogger object at 0x000001733A8FDCF0>"
+TBV fV|fW|fX
+M fY:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\robocorp\\log\\_robo_logger.py"
+M fZ:"new_func"
+M f0:"return func(self, *args, **kwargs)"
+TBE fY|20|fZ|f0
+TBV d6|fW|fX
+TBV A|B|C
+TBV D|E|F
+M f1:"func"
+M f2:"<function _RoboLogger.process_snapshot at 0x000001733A9288B0>"
+TBV f1|e3|f2
+M f3:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE fY|416|fR|f3
+TBV d6|fW|fX
+M f4:"hide_vars"
+TBV f4|6|7
+M f5:"c:\\ProgramData\\robocorp\\ht\\ce312a6_b1f3c24_09529949\\lib\\site-packages\\robocorp\\log\\_robo_output_impl.py"
+M f6:"self._dump_threads(hide_vars)"
+TBE f5|748|fR|f6
+TBV f4|6|7
+TBV ew|ex|ey
+M f7:"entry_id"
+M f8:"'ps_0'"
+TBV f7|Q|f8
+M f9:"entry_type"
+M ga:"'process_snapshot'"
+TBV f9|Q|ga
+M gb:"psutil"
+M gc:"<module 'psutil' from 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\psutil\\\\__init__.py'>"
+TBV gb|ex|gc
+M gd:"AccessDenied"
+M ge:"type"
+M gf:"<class 'psutil.AccessDenied'>"
+TBV gd|ge|gf
+M gg:"NoSuchProcess"
+M gh:"<class 'psutil.NoSuchProcess'>"
+TBV gg|ge|gh
+M gi:"ZombieProcess"
+M gj:"<class 'psutil.ZombieProcess'>"
+TBV gi|ge|gj
+M gk:"curr_process"
+M gl:"Process"
+M gm:"psutil.Process(pid=14700, name='python.exe', status='running', started='00:37:57')"
+TBV gk|gl|gm
+M gn:"log_info"
+M go:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x000001733AC477F0>"
+TBV gn|e3|go
+M gp:"memory_info"
+M gq:"'Total: 7.9 G, Available: 2.6 G, Used: 66.5 %'"
+TBV gp|Q|gq
+M gr:"child_i"
+M gs:"8"
+TBV gr|aD|gs
+M gt:"child"
+M gu:"psutil.Process(pid=4884, name='chrome.exe', status='running', started='00:38:18')"
+TBV gt|gl|gu
+M gv:"'chrome.exe'"
+TBV ad|Q|gv
+M gw:"status"
+M gx:"'running'"
+TBV gw|Q|gx
+M gy:"create_time"
+M gz:"'00:38:18'"
+TBV gy|Q|gz
+M gA:"ppid"
+M gB:"'14312'"
+TBV gA|Q|gB
+M gC:"cmdline"
+M gD:"'C:\\\\Program Files (x86)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe --type=renderer --user-data-dir=c:\\\\Users\\\\paula\\\\AppData\\\\Local\\\\robocorp\\\\temp\\\\58b7d5483cbf816e\\\\scoped_dir11240_246374957 --no-sandbox --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --video-capture-use-gpu-memory-buffer --lang=pt-BR --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1724631076153588 --launch-time-ticks=12422769216 --field-trial-handle=4480,i,18392711357868841554,1290195977616825678,262144 --variations-seed-version --log-level=0 --mojo-platform-channel-handle=4456 /prefetch:1'"
+TBV gC|Q|gD
+M gE:"rss"
+M gF:"'28.6 M'"
+TBV gE|Q|gF
+M gG:"vms"
+M gH:"'17.7 M'"
+TBV gG|Q|gH
+M gI:"proc_memory_info"
+M gJ:"pmem"
+M gK:"pmem(rss=29999104, vms=18608128, num_page_faults=9079, peak_wset=30003200, wset=29999104, peak_paged_pool=689808, paged_pool=680688, peak_nonpaged_pool=31488, nonpaged_pool=31248, pagefile=18608128, peak_pagefile=18653184, private=18608128)"
+TBV gI|gJ|gK
+M gL:"message"
+M gM:"'Subprocess: chrome.exe (pid: 4884, status: running)\\nCommand Line: C:\\\\Program Files (x86)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe --type=renderer --user-data-dir=c:\\\\Users\\\\paula\\\\AppData\\\\Local\\\\robocorp\\\\temp\\\\58b7d5483cbf816e\\\\scoped_dir11240_246374957 --no-sandbox --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --video-capture-use-gpu-memory-buffer --lang=pt-BR --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1724631076153588 --launch-time-ticks=12422769216 --field-trial-handle=4480,i,18392711357868841554,1290195977616825678,262144 --variations-seed-version --log-level=0 --mojo-platform-channel-handle=4456 /prefetch:1\\nStarted: 00:38:18\\nParent pid: 14312\\nResident Set Size: 28.6 M\\nVirtual Memory Size: 17.7 M'"
+TBV gL|Q|gM
+M gN:"_RoboOutputImpl"
+M gO:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x000001733A8FFF40>"
+TBV d6|gN|gO
+M gP:"_dump_threads"
+M gQ:"stack.append((f, f.f_lineno))"
+TBE f5|769|gP|gQ
+TBV d6|gN|gO
+TBV f4|6|7
+M gR:"6628"
+TBV ec|aD|gR
+M gS:"frame"
+M gT:"<frame at 0x000001733BF80A70, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>"
+TBV gS|gS|gT
+M gU:"thread"
+M gV:"_MainThread"
+M gW:"<_MainThread(MainThread, started 6628)>"
+TBV gU|gV|gW
+M gX:"'MainThread|Thread ID: 6628 (non daemon)'"
+TBV bn|Q|gX
+M gY:"f"
+M gZ:"<frame at 0x0000017338F4AD50, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_commands.py', line 494, code run>"
+TBV gY|gS|gZ
+M g0:"stack"
+M g1:"[(<frame at 0x000001733ACBB870, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x000001733A94C640, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x000001733ACA35E0, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x000001733A356A50, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x000001733BF80A70, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\ce312a6_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV g0|ak|g1
+ETD 68.617
+EPS 68.617
+ET j|e|68.817
+ER j|68.817
